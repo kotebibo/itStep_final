@@ -1,0 +1,58 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    max-width: 1200px;
+    height: 40px;
+    margin: auto;
+}
+
+nav ul li{
+    display: inline-block;
+}
+.logo-black{
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 36px;
+    color: #101913;
+    text-decoration: none;
+}
+.logo-green{
+    color: #3C9379;
+}
+nav ul li a{
+    font-family: 'Manrope';
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 16px;
+    color: #101913;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+.buttons button{
+    width: 102px;
+    height: 40px;
+    border-radius: 8px;
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 16px;
+}
+#log-in{
+    background-color: #FFFFFF;
+    border: 1px solid #FFFFFF;
+}
+#Register{
+    background-color: #3C9379;
+    border: 1px solid #3C9379;
+    color: #FFFFFF;
+}

@@ -1,0 +1,89 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-rows: 120px;
+    grid-template-columns: 372px 89px 101px 89px 75px 89px 131px 89px 165px;
+}
+
+.logo-black{
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 36px;
+    color: #101913;
+    text-decoration: none;
+}
+.logo-green{
+    color: #3C9379;
+}
+.column p{
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 22px;
+    color: #535A56;
+}
+.column h2{
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 22px;
+}
+.column1 p{
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    color: #535A56;
+}
+.column1{
+    width: 372px;
+    height: 120px;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 1;
+    grid-column-end: 2;
+}
+.column2{
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 3;
+    grid-column-end: 4;
+}
+.column3{
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 5;
+    grid-column-end: 6;
+}
+.column4{
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 7;
+    grid-column-end: 8;
+}
+.column5{
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 9;
+    grid-column-end: 10;
+}
+.Copyright{
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: #535A56;
+    text-align: center;
+}
