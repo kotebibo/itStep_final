@@ -6,11 +6,19 @@
 .container{
     max-width: 1200px;
     margin: auto;
-    max-height: 625px;
+    height: 625px;
+    display: grid;
+    grid-template-rows: 577px;
+    grid-template-columns:  457px  649px;
+    
 }
 .hero-pannel{
     width: 457px;
     margin-top: 100px;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 1;
+    grid-column-end: 2;
 }
 .hero-text{
     font-family: 'Manrope';
@@ -48,4 +56,14 @@
     font-size: 16px;
     line-height: 16px;
     text-decoration: none;
+}
+#hero-image{
+    width: 973px;
+    height: 649px;
+    overflow: visible;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 2;
+    grid-column-end: 3;
+
 }

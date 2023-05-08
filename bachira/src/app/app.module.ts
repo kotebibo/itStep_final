@@ -6,13 +6,19 @@ import { AppComponent } from './app.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { FooterComponent } from './footer/footer.component';
 import { HeroPannelComponent } from './hero-pannel/hero-pannel.component';
+import { BrandsComponent } from './brands/brands.component';
+import { CategoriesComponent } from './categories/categories.component';
+import { ProductsComponent } from './products/products.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavbarComponent,
     FooterComponent,
-    HeroPannelComponent
+    HeroPannelComponent,
+    BrandsComponent,
+    CategoriesComponent,
+    ProductsComponent
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,30 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    max-width: 1200px;
+    margin: auto;
+    margin-top: 75px;
+}
+.brand-logos{
+    display: flex;
+    gap: 5%;
+    margin-top: 60px;
+}
+.brand-logos img{
+    width: 16%;
+    aspect-ratio: 2/1;
+    object-fit: contain;
+
+}
+.brands-text{
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 40px;
+    text-align: center;
+    color: #101913;
+}
