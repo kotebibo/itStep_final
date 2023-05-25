@@ -51,6 +51,24 @@ nav ul li a{
     background-color: #FFFFFF;
     border: 1px solid #FFFFFF;
 }
+#log-in a{
+    text-decoration: none;
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 16px;
+    color: #101913;
+}
+#Register a{
+    text-decoration: none;
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 16px;
+    color: #FFFFFF;
+}
 #Register{
     background-color: #3C9379;
     border: 1px solid #3C9379;

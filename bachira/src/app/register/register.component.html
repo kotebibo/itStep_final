@@ -1,0 +1,42 @@
+<div class="container">
+    <div class="empty"></div>
+    <form [formGroup]="registerForm" (ngSubmit)="onSubmit()">
+        <div>
+          <label for="name">Name:</label>
+          <input type="text" id="name" formControlName="name">
+          <div *ngIf="registerForm.get('name')!.invalid && registerForm.get('name')!.touched" class="requirment-text">
+            Name is required.
+          </div>
+        </div>
+        <div>
+          <label for="last-name">Last Name:</label>
+          <input type="text" id="last-name" formControlName="lastName">
+          <div *ngIf="registerForm.get('lastName')!.invalid && registerForm.get('lastName')!.touched" class="requirment-text">
+            Last name is required.
+          </div>
+        </div>
+        <div>
+          <label for="email">Email:</label>
+          <input type="email" id="email" formControlName="email">
+          <div *ngIf="registerForm.get('email')!.invalid && registerForm.get('email')!.touched" class="requirment-text">
+            Email is required.
+          </div>
+        </div>
+        <div>
+          <label for="password">Password:</label>
+          <input type="password" id="password" formControlName="password">
+          <div *ngIf="registerForm.get('password')!.invalid && registerForm.get('password')!.touched" class="requirment-text">
+            Password is required.
+          </div>
+        </div>
+        <div>
+          <label for="repeat-password">Repeat Password:</label>
+          <input type="password" id="repeat-password" formControlName="repeatPassword">
+          <div *ngIf="registerForm.get('repeatPassword')!.invalid && registerForm.get('repeatPassword')!.touched" class="requirment-text">
+            Repeat password is required.
+          </div>
+        </div>
+        <button type="submit">Register</button>
+      </form>
+      
+</div>

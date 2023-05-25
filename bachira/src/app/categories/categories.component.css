@@ -5,11 +5,22 @@
 }
 .container{
     max-width: 1200px;
+    max-height: 496px;
     margin: auto;
+    display: grid;
+    grid-template-rows: 180px 26px 180px;
+    grid-template-columns: 500px 26px 287px 26px 361px;
 }
+.categories-cards{
+    display: grid;
+    grid-template-rows: 180px 26px 180px;
+    grid-template-columns: 500px 26px 287px 26px 361px;
+
+}
+
 .categories-cards div{
     display: flex;
-    justify-content: end;
+    justify-content: flex-end;
     align-items: flex-start;
 }
 .categories-cards div h5{
@@ -35,6 +46,10 @@
     border: 1px;
     border-radius: 30px;
     background-image: url(../../assets/fashion.png);
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 1;
+    grid-column-end: 2;
 }
 .skincare{
     width: 500px;
@@ -42,6 +57,10 @@
     border: 1px;
     border-radius: 30px;
     background-image: url(../../assets/skincare.png);
+    grid-row-start: 3;
+    grid-row-end: 4;
+    grid-column-start: 1;
+    grid-column-end: 2;
 }
 .shoes{
     width: 287px;
@@ -49,11 +68,19 @@
     border: 1px;
     border-radius: 30px;
     background-image: url(../../assets/shoes.png);
+    grid-row-start: 1;
+    grid-row-end: 4;
+    grid-column-start: 3;
+    grid-column-end: 4;
 }
 .electronic{
-    width: 287px;
+    width: 361px;
     height: 386px;
     border: 1px;
     border-radius: 30px;
     background-image: url(../../assets/electronic.png);
+    grid-row-start: 1;
+    grid-row-end: 4;
+    grid-column-start: 5;
+    grid-column-end: 6;
 }

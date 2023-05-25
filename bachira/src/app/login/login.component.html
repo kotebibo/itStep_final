@@ -1,0 +1,20 @@
+<form #loginForm="ngForm">
+    <div>
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" [(ngModel)]="email" #emailInput="ngModel" required email>
+      <div *ngIf="emailInput.invalid && emailInput.touched">
+        <p *ngIf="emailInput.errors?.['required']" class="error-text">Email is required</p>
+        <p *ngIf="emailInput.errors?.['email']" class="error-text">Email is invalid</p>
+      </div>
+    </div>
+    <div>
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password" [(ngModel)]="password" #passwordInput="ngModel" required minlength="3">
+      <div *ngIf="passwordInput.invalid && passwordInput.touched">
+        <p *ngIf="passwordInput.errors?.['required']" class="error-text">Password is required</p>
+        <p *ngIf="passwordInput.errors?.['minlength']" class="error-text">Password must be at least 8 characters</p>
+      </div>
+    </div>
+    <button (click)="login()" [disabled]="loginForm.invalid">Login</button>
+  </form>
+  <p *ngIf="errorMessage">{{ errorMessage }}</p>

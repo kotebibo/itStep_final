@@ -7,7 +7,6 @@
     max-width: 1200px;
     margin: auto;
     margin-top: 100px;
-    padding-bottom: 150px;
 }
 .cards{
     display: grid;
@@ -35,7 +34,6 @@
     grid-column-start: 5;
     grid-column-end: 6;
 }
-
 .airpods{
     grid-row-start: 1;
     grid-row-end: 2;
@@ -43,7 +41,9 @@
     grid-column-end: 8;
 }
 .container div div img{
-    border-radius: 30px;
+    width: 280px;
+    height: 380px;
+    object-fit: contain;
 }
 .container div div h3{
     font-family: 'Manrope';
@@ -65,4 +65,52 @@ h1{
     font-weight: 700;
     font-size: 32px;
     line-height: 40px;
+}
+.order{
+    background-color: #3C9379;
+    border: 1px solid #3C9379;
+    color: #FFFFFF;
+    width: 102px;
+    height: 40px;
+    border-radius: 8px;
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 16px;
+    margin-top: 20px;
+}
+@media  only screen and (max-width:500px) {
+    .cards{
+        display: grid;
+        grid-template-rows: 448px 448px;
+        grid-template-columns: 240px 20px 240px;
+    }
+    .air-force{
+        grid-row-start: 1;
+        grid-row-end: 2;
+        grid-column-start: 1;
+        grid-column-end: 2;
+    }
+    
+    .white-sweater{
+        grid-row-start: 1;
+        grid-row-end: 2;
+        grid-column-start: 3;
+        grid-column-end: 4;
+    }
+    
+    
+    .smartwatch{
+        grid-row-start: 2;
+        grid-row-end: 3;
+        grid-column-start: 1;
+        grid-column-end: 2;
+    }
+    .airpods{
+        grid-row-start: 2;
+        grid-row-end: 3;
+        grid-column-start: 3;
+        grid-column-end: 4;
+    }
 }
