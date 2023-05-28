@@ -24,6 +24,7 @@ import { BrandsPageComponent } from './brands-page/brands-page.component';
 import { BrandsAdidasComponent } from './brands-adidas/brands-adidas.component';
 import { BrandsBalenciagaComponent } from './brands-balenciaga/brands-balenciaga.component';
 import { BrandsGucciComponent } from './brands-gucci/brands-gucci.component';
+import { ProductDetailsComponent } from './product-details/product-details.component';
 
 @NgModule({
   declarations: [
@@ -45,7 +46,8 @@ import { BrandsGucciComponent } from './brands-gucci/brands-gucci.component';
     BrandsPageComponent,
     BrandsAdidasComponent,
     BrandsBalenciagaComponent,
-    BrandsGucciComponent
+    BrandsGucciComponent,
+    ProductDetailsComponent
   ],
   imports: [
     BrowserModule,

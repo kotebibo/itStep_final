@@ -1,0 +1,66 @@
+[
+    {
+      "category": "Electronics",
+      "brand": "Apple",
+      "price": 999,
+      "name": "iPhone",
+      "image": "iphone.jpg",
+      "ordered-status": false
+    },
+    {
+      "category": "Clothing",
+      "brand": "Nike",
+      "price": 100,
+      "name": "Running Shoes",
+      "image": "shoes.jpg",
+      "ordered-status": false
+    },
+    {
+        "category": "Skincare",
+        "brand": "Neutrogena",
+        "price": 12,
+        "name": "Facial Cleanser",
+        "image": "cleanser.jpg",
+        "ordered-status": false
+      },
+      {
+        "category": "Fashion",
+        "brand": "Gucci",
+        "price": 1500,
+        "name": "Handbag",
+        "image": "handbag.jpg",
+        "ordered-status": false
+      },
+      {
+        "category": "Electronics",
+        "brand": "Apple",
+        "price": 999,
+        "name": "iPhone",
+        "image": "iphone.jpg",
+        "ordered-status": false
+      },
+      {
+        "category": "Clothing",
+        "brand": "Nike",
+        "price": 100,
+        "name": "Running Shoes",
+        "image": "shoes.jpg",
+        "ordered-status": false
+      },
+      {
+          "category": "Skincare",
+          "brand": "Neutrogena",
+          "price": 12,
+          "name": "Facial Cleanser",
+          "image": "cleanser.jpg",
+          "ordered-status": false
+        },
+        {
+          "category": "Fashion",
+          "brand": "Gucci",
+          "price": 1500,
+          "name": "Handbag",
+          "image": "handbag.jpg",
+          "ordered-status": false
+        }
+  ]

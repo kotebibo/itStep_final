@@ -15,12 +15,23 @@ export class LoginComponent {
 
   constructor(private http: HttpClient) {}
 
-  URL="http://kketelauri-001-site1.gtempurl.com/api/user/getuser"
 
   login() {
-    this.http.post<{ token: string }>('/api/User/login', { email: this.email, password: this.password })
+    this.http.post<{ token: string }>('https://kketelauri-001-site1.gtempurl.com/api/user/adduser', { email: this.email, password: this.password })
       .subscribe(response => {
-        
+        fetch('https://kketelauri-001-site1.gtempurl.com/api/user/login', {
+          method: 'POST',
+          headers: {
+              'Accept': 'application/json',
+              'Content-Type': 'application/json'
+          },
+          body: JSON.stringify({ 
+          "email": "keti4@gmail.com",
+          "password": "123",
+        })
+      })
+         .then(response => response.json())
+         .then(response => console.log(JSON.stringify(response)))
       }, error => {
         this.errorMessage = 'Login failed';
       });
